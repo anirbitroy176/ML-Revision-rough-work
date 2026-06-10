@@ -40,3 +40,57 @@ J(m,b)=\frac{1}{n}\sum_{i=1}^{n}(y-(mx_i+b))^2
 $$
 
 We adjust m and b to minimize this cost and find the best-fit line.
+
+## What does MSE Measure?
+
+MSE, or Mean Squared Error, measures the average of the squared errors between actual values and predicted values. The lower the MSE,</br>
+the better the model’s predictions are.
+
+$$
+MSE= \frac{1}{n}\sum_{i=1}^{n}(y_i-\hat{y_i})^2
+$$
+
+Squaring is used because:
+
+- Positive and negative errors should not cancel each other out.
+- Larger errors are penalized more heavily.
+- Squared error is differentiable, which makes it suitable for gradient descent.
+
+## What does the gradient mean?
+Gradient means a mathematical vector that points in the direction of steepest increase of a function.</br>
+For a function with multiple parameters, the gradient contains partial derivatives with respect to each parameters.</br>
+For the linear regression loss function:</br>
+
+$$
+J(m,b)
+$$
+
+the gradient is:
+
+
+$$
+\nabla J(m,b) =
+\left[
+\frac{\partial J}{\partial m},
+\frac{\partial J}{\partial b}
+\right]
+$$
+
+This slope vector tells us how the loss changes 
+- when slope (m) changes
+- when intercept (b) changes
+- the direction in which the loss changes most rapidly
+
+Since Gradient Descent aims to minimize the loss, it moves in the opposite direction of the gradient.
+
+Therefore:
+
+- Gradient → direction of steepest increase
+- Negative Gradient → direction of steepest decrease
+
+This idea forms the foundation of the Gradient Descent optimization algorithm.
+
+
+
+
+
