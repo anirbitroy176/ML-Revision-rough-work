@@ -90,6 +90,9 @@ Therefore:
 
 This idea forms the foundation of the Gradient Descent optimization algorithm.
 
+## Why do we move opposite to the gradient?
+We move opposite to the gradient because gradient points in the direction where the loss increases the </br>
+fastest. Since our goal is to minimise the loss, we move in the opposite direction
 
 
 
