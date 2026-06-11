@@ -94,6 +94,13 @@ This idea forms the foundation of the Gradient Descent optimization algorithm.
 We move opposite to the gradient because gradient points in the direction where the loss increases the </br>
 fastest. Since our goal is to minimise the loss, we move in the opposite direction
 
+## What is learning rate?
+Learning rate (α) controls how big a step is.
 
+small α  → tiny steps → slow learning </br>
+large α  → huge steps → may overshoot  </br>
+very large α → loss may explode/diverge
 
+## What happens if learning rate is too small?
+If l	
 
