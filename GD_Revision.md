@@ -101,6 +101,13 @@ small α  → tiny steps → slow learning </br>
 large α  → huge steps → may overshoot  </br>
 very large α → loss may explode/diverge
 
-## What happens if learning rate is too small?
-If l	
+## What are parameters in simple Linear Regression?
+In simple linear regression, we use two parameters m and b.
+- m  is the slope which controls how much y changes when x changes
+- b  is the intercept where the line cuts the y-axis.
+These parameters are tunable like knobs that are adjusted to find the best fit line
 
+## Why do we initialize m and b?
+ We initialize m and b because Gradient Descent needs starting values for the parameters. From these initial values, </br>
+ the model makes predictions, calculates error and cost, finds the gradients, and updates m and b repeatedly </br>
+ to reduce the cost.
