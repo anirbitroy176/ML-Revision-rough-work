@@ -136,6 +136,59 @@ where:
 In Gradient Descent, residuals are used to calculate the cost and gradients. The model then updates $m$ and $b$ to reduce these errors.
 
 ## What is the gradient of cost with respect to m?
-The cost of the gradient with respect to m is   
+The gradient of cost with respect to m tells us how much the cost changes when the $m$ changes.</br>
+For Simple Linear Regression:
 
+$$ 
+\hat{y}_i = mx_i + b
+$$
+
+The gradient is:
+
+$$ 
+\frac{\partial J}{\partial m} = -\frac{2}{n}\sum_{i=1}^{n} x_i(y_i - \hat{y}_i) 
+$$
+
+This value is used to update $m$ during Gradient Descent.
+
+## What is the gradient of cost with respect to b?
+The gradient of cost with respect to b tells us how the cost changes when the intercept b changes.
+
+For Simple Linear Regression:
+
+$$ 
+\hat{y}_i = mx_i + b 
+$$
+
+The gradient is:
+
+$$ 
+\frac{\partial J}{\partial b} = -\frac{2}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i) 
+$$
+
+This value is used to update b during Gradient Descent.
+
+## What is the update rule of m?
+The update rule for m:
+
+$$
+m = m - \alpha \frac{\partial J}{\partial m}
+$$
+
+or in code
+
+m = m - learning_rate * dm
+
+This means m is updated by moving opposite to its gradient so that the cost decreases.
  
+## What is the update rule for b?
+
+The update rule for b is:
+
+$ b = b - \alpha \frac{\partial J}{\partial b} $
+
+or in code:
+
+b = b - learning_rate * db
+
+This means b is updated by moving opposite to its gradient so that the cost decreases.
