@@ -111,3 +111,31 @@ These parameters are tunable like knobs that are adjusted to find the best fit l
  We initialize m and b because Gradient Descent needs starting values for the parameters. From these initial values, </br>
  the model makes predictions, calculates error and cost, finds the gradients, and updates m and b repeatedly </br>
  to reduce the cost.
+ ## What is the prediction formula?
+ The prediction formula is:
+ 
+ $$
+ \hat{y} = mx + b
+ $$
+
+ where: 
+ - m is the slope
+ - b is the intercept
+ - x = input feature
+ - y = predicted output
+A residual error is the difference between the actual value and the predicted value.
+
+$e_i = y_i - \hat{y}_i$
+
+where:
+
+* $y_i$ is the actual value
+* $\hat{y}_i$ is the predicted value
+* $e_i$ is the residual/error for one data point
+
+In Gradient Descent, residuals are used to calculate the cost and gradients. The model then updates $m$ and $b$ to reduce these errors.
+
+## What is the gradient of cost with respect to m?
+The cost of the gradient with respect to m is   
+
+ 
